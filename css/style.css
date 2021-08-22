@@ -1,0 +1,705 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Livvic', sans-serif;
+    color: #fff;
+    overflow-x: hidden;
+}
+header{
+    background-color: #014E56;
+    padding-bottom: 160px;
+}
+.logo img{
+    margin-top: 36px;
+    width: 128px;
+}
+#check{
+    display: block;
+    position: absolute;
+    top: 32px;
+    right: -4px;
+    font-size: 25px;
+    z-index: 122;
+    width: 40px;
+    height: 20px;
+    cursor: pointer;
+    opacity: 0;
+}
+.checkbtn{
+    display: block;
+}
+.checked img{
+    position: absolute;
+    top: 35px;
+    right: 10px;
+    font-size: 25px;
+    color: #fff;
+    z-index: 0;
+}
+.checked .close{
+    display: none;
+    opacity: 0;
+}
+#check:checked ~ .checked .bars{
+    opacity: 0;
+    display: none;
+}
+#check:checked ~ .checked .close{
+    opacity: 1;
+    display: block;
+    position: absolute;
+    z-index: 100;
+}
+.nav{
+    display: block;
+}
+.nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #2C6269;
+    top: -20px;
+    left: 100%;
+    transition: all .7s ease;
+    opacity: 1;
+    z-index: 76;
+    padding-top: 100px;
+}
+.nav ul li{
+    display: block;
+    width: 100%;
+    padding-left: 10px;
+    padding-bottom: 15px;
+}
+.nav ul li a{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
+    transition: .3s all ease;
+}
+.nav ul li a:hover{
+    color: #E87777;
+}
+.nav ul li:nth-child(3){
+    margin-top: 40px;
+}
+.nav ul li a.contact-item{
+    padding: 9px 32px 11px 31px;
+    border-radius: 24px;
+    border: 2px solid #fff;
+    transition: all .3s ease;
+}
+.nav ul li a.contact-item:hover{
+    background-color: #fff;
+    color: #2C6269;
+}
+#check:checked ~  ul{
+    left: 30%;
+}
+.contact-us{
+    display: none;
+}
+
+.header-one h1{
+    position: relative;
+    z-index: 23;
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 40px;
+    margin: 80px 0 0 0 ;
+    font-family: 'Livvic', sans-serif;
+}
+.header-one span{
+    color: #E87777;
+}
+.header-two p{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 550;
+    color: #fff;
+    font-family: 'Livvic', sans-serif;
+    line-height: 28px;
+}
+.header-left{
+    display: none;
+}
+.header-bottom{
+    position: relative;
+    width: 350px;
+    height: 100px;
+    top: 160px;
+    left: 0;
+    z-index: 0;
+}
+.header-bottom .oval-10{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+.header-bottom .oval-11{
+    position: absolute;
+    left: 142px;
+    bottom: 0;
+    z-index: 12;
+}
+.header-bottom .oval-12{
+    position: absolute;
+    left: 167px;
+    bottom: 0;
+    z-index: 3;
+}
+.header-bottom .square{
+    position: absolute;
+    left: 324px;
+    top: 0;
+    z-index: 13;
+}
+.header-bottom .shape{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 4;
+}
+#build{
+    position: relative;
+    z-index: 12;
+    background-color: #012F34;
+    padding: 0 0 15px 0;
+    text-align: center;
+}
+.build-title{
+    margin-bottom: 56px;
+    text-align: left;
+}
+.build-hr{
+    position: relative;
+    width: 50px;
+    height: 4px;
+    background-color: #F67E7E;
+    top: -5px;
+    left: 0;
+    z-index: 22;
+}
+.build-title h2{
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 700;
+}
+.build-img i{
+    font-size: 40px;
+    color: #79C8C7;
+}
+.buil-content h3{
+    color: #F67E7E;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
+    margin: 16px 0 0 0;
+}
+.buil-content p{
+    margin: 8px 0 50px 0;
+    line-height: 25px;
+    font-weight: 600;
+    font-size: 15px;
+    color: #CCD5D6;
+}
+.build-top{
+    width: 100px;
+    height: 110px;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.build-top .oval-6{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+}
+.build-top .cell-square{
+    position: absolute;
+    top: 0;
+    left: 100px;
+}
+.build-top .shape{
+    position: absolute;
+    top: 44px;
+    left: 0;
+    z-index: 4;
+}
+#client{
+    background: #004047;
+    text-align: center;
+}
+#client h2{
+    position: relative;
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 700;
+    margin: 40px 0 0 0;
+    z-index: 22;
+}
+#client h2 span{
+    color: #79C8C7;
+}
+#client p{
+    position: relative;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 600;
+    margin: 0;
+    z-index: 5;
+}
+.margin-top{
+    margin-top: 30px;
+}
+.margin-top:last-child{
+    margin-bottom: 64px;
+}
+#client h3{
+    color: #79C8C7;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
+    margin: 16px 0 2px 0;
+}
+#client p.ilatic{
+    font-style: italic;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 500;
+    margin: 0 0 16px 0;
+}
+#client .client-img{
+    border-radius: 50%;
+    width: 62px;
+}
+.backend-img{
+    position: relative;
+    top: 23px;
+    z-index: 3;
+}
+.client-top{
+    position: relative;
+    width: 150px;
+    height: 100px;
+    top: 0;
+    left: 0;
+}
+.client-top .shape{
+    position: absolute;
+    left: 50px;
+    top: 56px;
+    z-index: 3;
+}
+.client-top .rectangle-2{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+.client-bottom{
+    position: relative;
+    width: 200px;
+    height: 100px;
+    bottom: 0;
+    left: 0;
+}
+.client-bottom .oval-12{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+}
+.client-bottom .shape{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 5;
+}
+.client-bottom .rectangle{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.ready-botton{
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 200px;
+    height: 122px;
+}
+.ready-botton .oval-8{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 7;
+}
+.ready-botton .rectangle{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+}
+.ready-botton .shape-1{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+}
+.ready-botton .cell-square{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 12;
+}
+
+
+#ready-started{
+    position: relative;
+    background-color: #F67E7E;
+    z-index: 10;
+    padding: 83px 0 0 0 ;
+}
+#ready-started h2{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: center;
+    color: #012F34;
+}
+.row{
+    display: grid;
+    justify-items: center;
+}
+#ready-started a{
+    border-radius: 24px;
+    padding: 9px 33px 11px 32px;
+    border: 2px solid #012F34;
+    color: #012F34;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    transition: .3s all ease;
+}
+#ready-started a:hover{
+    background-color: #012F34;
+    color: #fff;
+}
+
+#footer{
+    position: relative;
+    z-index: 22;
+    padding: 66px 0;
+    background-color: #002529;
+    text-align: center;
+}
+#footer img{
+    width: 95px;
+}
+.main-footer{
+    display: flex;
+    justify-content: center;
+}
+.main-footer li {
+    padding-right: 24px;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.main-footer a{
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 600;
+    color: #fff;
+    transition: .3s all ease;
+}
+.main-footer a:hover{
+    color: #F67E7E;
+}
+.connection-footer{
+    margin: 10px 0;
+}
+.connection-footer li{
+    padding-top: 5px;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 600;
+    color: #99A8A9;
+}
+.link-footer i{
+    font-size: 24px;
+    margin-left: 16px;
+    transition: .3s all ease;
+    cursor: pointer;
+}
+.link-footer i:hover{
+    color: #F67E7E;
+}
+.link-footer{
+    margin-top: 20px;
+}
+.link-footer p{
+    font-size: 15px;
+    line-height: 25px;
+    color: #99A8A9;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+@media (min-width:768px){
+    header{
+        padding-bottom: 0;
+    }
+    .nav{
+        display: block;
+    }
+    .nav ul{
+        display: inline-block;
+        position: inherit;
+        background: none;
+        width: inherit;
+        height: inherit;
+        padding: 0;
+        transition: none;
+    }
+    .nav ul li{
+        display: inline-block;
+        border-bottom: none;
+        border: none;
+        width: inherit;
+        padding: 22px 10px 0 0;
+    }
+    .nav ul li a{
+        color: #fff;
+        transition: 0.3s all ease;
+    }
+    .nav ul li a:hover{
+        color: #E87777;
+    }
+    .nav .contact-us{
+        display: inline-block;
+        float: right;
+        padding: 9px 33px 11px 32px;
+        color: #fff;
+        border-radius: 24px;
+        border: 2px solid #fff;
+        font-weight: 600;
+        font-size: 18px;
+        transition: all .3s ease;
+        margin-top: 20px;
+    }
+    .nav .contact-us:hover{
+        background-color: #fff;
+        color: #004047;
+    }
+    .nav ul li:nth-child(3){
+        margin-top: 0;
+    }
+    .nav ul li a.contact-item{
+        display: none;
+    }
+    #check{
+        display: none;
+    }
+    .checked{
+        display: none;
+    }
+    .header-one h1{
+        font-size: 64px;
+        line-height: 56px;
+    }
+    .header-two p{
+        width: 80%;
+        margin: 24px auto 150px auto;
+    }
+    .header-bottom{
+       left: 30%; 
+       top: 0;
+    }
+    #build{
+        margin: 0;
+        padding-bottom: 80px;
+    }
+    #build{
+        text-align: left;
+    }
+    #build h3{
+        margin-top: 0;
+    }
+    #build p{
+        margin-bottom: 32px;
+    }
+    #client h2{
+        margin: 0 auto;
+        width: 70%;
+    }
+    #ready-started {
+        text-align: left;
+        padding-top: 50px;
+    }
+    .row{
+        height: 100%;
+        align-items: center;
+    }
+    #footer{
+        text-align: left;
+    }
+    #footer img{
+        margin-top: 10px;
+    }
+    .main-footer{
+        margin-top: 53px;
+        justify-content: start;
+        padding-left: 0;
+    }
+    .link-footer i{
+        margin-left: 0;
+        margin-right: 16px;
+    }
+    .link-footer p{
+        margin: 0;
+    }
+    .link-title{
+        display: inline-block;
+    }
+    .connection-footer{
+        margin: 0;
+    }
+    .connection-footer{
+        text-align: right;
+    }
+    .link-footer p{
+        float: right;
+    }
+}
+@media (min-width:992px){
+    .logo img{
+        width: 160px;
+    }
+    .header-one h1{
+        font-size: 100px;
+        line-height: 100px;
+    }
+    .hr-header{
+        position: relative;
+        left: 45px;
+        top: 30px;
+        width: 50px;
+        height: 4px;
+        background-color: #79C8C7;
+    }
+    .header-two-title{
+        display: grid;
+        height: 100%;
+        align-items: end;
+    }
+    .header-two p{
+        margin: 0 45px;
+        text-align: left;
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 600;
+    }
+    .header-bottom{
+        left: 60%;
+        top: 0;
+    }
+    .header-left{
+        display: block;
+        position: relative;
+        width: 100px;
+        height: 200px;
+        left: 0;
+        top: -200px;
+        z-index: 0;
+    }
+    .header-left .oval-1{
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 4;
+    }
+    .header-left .cell-square{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 5;
+    }
+    .header-left .rectangle{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 3;
+    }
+    #build{
+        padding: 0 0 140px 0;
+    }
+    .build-hr{
+        top: -54px;
+    }
+    #build h2{
+        margin: 0;
+        width: 80%;
+        font-size: 48px;
+        line-height: 48px;
+        position:relative;
+        z-index: 22;
+    }
+    .build-top{
+        position: relative;
+        left: 0;
+        float: none;
+    }
+    .oval-2-1{
+        border-radius: 0 100px 100px 0;
+    }
+    .oval-2-2{
+        border-radius: 0 100px 100px 0;
+        left: 0;
+    }
+    #client h2{
+        font-size: 48px;
+        line-height: 48px;
+    }
+    #ready-started h2{
+        font-size: 48px;
+        line-height: 48px;
+    }
+    .combined-shape-4{
+        bottom: -20px;
+    }
+    #footer img{
+        width: 160px;
+    }
+    #footer a{
+        font-size: 18px;
+    }
+    .connection-footer li{
+        text-align: left;
+    }
+    .link-footer{
+        margin-top: 10px;
+    }
+    .link-title{
+        width: 100%;
+        float: right;
+        display: block;
+    }
+    .link-title i{
+        float: right;
+    }
+    .link-footer p{
+        margin-top: 55px;
+    }
+}
